@@ -1,15 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Logo from './logo';
 import './App.css';
+import Home from './home/index'
 
-function App() {
+
+const App = () => {
+
+  const [contagem, setContagem] = useState({})
+  const [verifica, setVerifica] = useState(false)
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Logo/>
+        <Home />
         <a
           className="App-link"
           href="https://reactjs.org"
