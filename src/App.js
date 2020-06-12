@@ -7,8 +7,6 @@ import Home from './home/index'
 const App = () => {
 
   const [contagem, setContagem] = useState({})
-  const [verifica, setVerifica] = useState(false)
-
 
   return (
     <div className="App">
